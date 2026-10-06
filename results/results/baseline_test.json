@@ -1,18 +1,3 @@
-# ppe-cascade
-
-Confidence-routed helmet and PPE detection. A fast YOLO detector handles most frames,
-uncertain detections are verified by a small vision-language model, and anything still
-uncertain is flagged for a human instead of guessed.
-
-## Status
-- [x] Data pipeline and fixed train/val/test split
-- [x] YOLO11s baseline
-- [ ] Tracking (ByteTrack)
-- [ ] VLM verifier and confidence router
-- [ ] Benchmark: YOLO only vs VLM only vs cascade
-- [ ] Docker, API, demo video
-
-## Baseline results (test set)
 {
   "weights": "/content/drive/MyDrive/ppe-cascade/runs/yolo11s_baseline/weights/best.pt",
   "split": "test",
